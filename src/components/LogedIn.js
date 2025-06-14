@@ -1,20 +1,20 @@
 import React from 'react'
 
-export default function LogedIn({loged,setloged}) {
+export default function LogedIn({isLoggedIn,setisLoggedIn}) {
     function handle(e){
         e.preventDefault();
-        setloged(true);
+        setisLoggedIn(true);
     }
-    if(loged){
+    if(isLoggedIn){
         return <p>you are loged in</p>
     }
   return (
     <div>
       <form onSubmit={handle}>
-        <label>Username</label>
+        <label>Username:</label>
         <input type="text"/>
         <br/>
-        <label>password</label>
+        <label>password:</label>
         <input type="password"/>
         <br/>
         <button type="submit">submit</button>

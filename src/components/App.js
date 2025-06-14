@@ -4,11 +4,11 @@ import LogedIn from "./LogedIn";
 import './../styles/App.css';
 
 const App = () => {
-  const [loged,setloged]=useState(false);
+  const [isLoggedIn,setisLoggedIn]=useState(false);
   return (
     <div>
         <h1>Parent component</h1>
-      <LogedIn loged={loged} setloged={setloged}/>
+      <LogedIn isLoggedIn={isLoggedIn} setisLoggedIn={setisLoggedIn}/>
     </div>
   )
 }
